@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Forever</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <h2>Travel Forever</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="https://www.instagram.com/_shekhar_0082__/">Contact</a></li>
+    </ul>
+</nav>
+<header>
+    <h1>Explore The World Forever</h1>
+    <p>Discover new destinations, cultures, and adventures that last a lifetime. Your journey begins here.</p>
+    <a href="start journey.html" class="btn">Start Your Journey</a>
+</header>
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        Travel Forever helps you explore the world with ease. From hidden gems to popular destinations,
+        we provide travel guides, tips, and inspiration to make every journey unforgettable.
+    </p>
+</section>
+<section id="features">
+    <h2>Why Choose Us</h2>
+    <div class="features">
+        <div class="card">🌍 Global Destinations</div>
+        <div class="card">✈️ Smart Travel Guides</div>
+        <div class="card">💡 Expert Advice</div>
+        <div class="card">📸 Travel Inspiration</div>
+    </div>
+</section>
+<footer>
+    <p>© 2026 Travel Forever | Designed with ❤️</p>
+</footer>
+<script>
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    cards.forEach(card => {
+        const boxTop = card.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+            card.classList.add('show');
+        }
+    });
+});
+</script>
+</body>
+</html>
