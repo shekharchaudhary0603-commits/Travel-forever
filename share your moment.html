@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel Forever - Share Moments</title>
+<link rel="stylesheet" href="share your moment.css">
+</head>
+<body>
+<nav>
+    <h1>Travel Forever</h1>
+    <span>Share Your Journey 🌍</span>
+</nav>
+<div class="share-container">
+    <h2>Share Your Moment</h2>
+    <form id="moment-form">
+        <div class="input-group">
+            <input type="file" id="photo" accept="image/*">
+        </div>
+        <div class="input-group">
+            <input type="text" id="address" placeholder="Location">
+        </div>
+        <div class="input-group">
+            <input type="url" id="map" placeholder="Map link">
+        </div>
+        <div class="input-group">
+            <input type="number" id="cost" placeholder="Cost">
+        </div>
+        <button type="submit" class="submit-btn">Post</button>
+    </form>
+</div>
+<div id="moments-list" class="moments-display"></div>
+<footer>
+    <p>© 2026 Travel Forever</p>
+</footer>
+<script src="share your moment.js"></script>
+</body>
+</html>
